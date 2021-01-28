@@ -9,7 +9,7 @@ for i in range(N):
     cur_min = min(a, b)
     cur_max = max(a, b)
     list_of_min.append(cur_min)
-    if (cur_max - cur_min) % 8 > 0:
+    if (cur_max - cur_min) % 8 > 0 and dMin > cur_max - cur_min:
         dMin = cur_max - cur_min
 
 if sum(list_of_min) % 8 != 2:
@@ -28,7 +28,7 @@ for i in range(N):
     cur_min = min(a, b)
     cur_max = max(a, b)
     list_of_min.append(cur_min)
-    if (cur_max - cur_min) % 8 > 0:
+    if (cur_max - cur_min) % 8 > 0 and dMin > cur_max - cur_min:
         dMin = cur_max - cur_min
 
 if sum(list_of_min) % 8 != 2:
