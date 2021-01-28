@@ -1,11 +1,11 @@
-def check(x, r, step):
-    if (x > r) or (step > 8):
+def check(num, fin, step):
+    if (num > fin) or (step > 8):
         return False
-    if x == r:
+    if num == fin:
         return True
-    a1 = check(x + 1, r, step + 1)
-    a2 = check(x + 5, r, step + 1)
-    a3 = check(x * 3, r, step + 1)
+    a1 = check(num + 1, fin, step + 1)
+    a2 = check(num + 5, fin, step + 1)
+    a3 = check(num * 3, fin, step + 1)
     return a1 or a2 or a3
 
 
